@@ -1,0 +1,128 @@
+/* CSS Reset & Global Styles */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+body {
+  background-color: rgb(20, 19, 19);
+}
+::placeholder {
+  color: rgb(221, 221, 221);
+}
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content:center;
+  flex-direction: row;
+  align-items: center;
+  transition: 0.8s all;
+}
+.img-container{
+  margin-right: 10rem;
+}
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5%;
+  color: #fff;
+}
+.container {
+  width: 300px;
+}
+.result {
+  width: 59.1%;
+}
+input {
+  padding: 25px;
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+  cursor: pointer;
+  width: 70px;
+  background-color: rgb(47, 51, 50);
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+
+.first-row,
+.second-row,
+.third-row,
+.fourth-row,
+.fifth-row {
+  margin-bottom: 3px;
+}
+input[type="text"] {
+  background-color: rgb(47, 51, 50);
+
+  width: 218px;
+}
+input[type="button"]:hover {
+  background-color: rgb(160, 160, 160);
+  color: #fff;
+}
+#clear {
+  color: #fff;
+  background-color: rgb(255, 42, 42);
+}
+button {
+  border: none;
+  background-color: rgb(39, 36, 36);
+  padding: 8px;
+  color: white;
+  margin: 2px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 4px;
+  font-size: 0.8em;
+  font-weight: 200;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  border: none;
+  background-color: rgb(39, 36, 36);
+  padding: 8px;
+  color: white;
+  margin: 2px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  font-weight: 200;
+}
+/* .bottom-buttons {
+  display: flex;
+  margin-left: -2.3px;
+} */
+.fab {
+  font-size: 1.1em;
+}
+.footer{
+  width: 100%;
+  margin-top: 6rem;
+  bottom: 0;
+  text-align: center;
+  background-color: rgb(39, 36, 36);
+}
+.footer p{
+  color:rgb(160, 160, 160);
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 7px;
+}
+.footer .dev{
+  font-family: 'Courgette', cursive;
+  text-decoration: none;
+  font-weight: 600;
+  color:rgb(160, 160, 160);
+}
+.footer .dev:hover{
+  opacity: 0.8;
+}
+.footer .love{
+  color: #FF2A2A;
+}
