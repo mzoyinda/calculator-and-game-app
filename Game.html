@@ -1,17 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <img src="/images/jerryUp.png" alt="">
-    <div>
-        <button>top</button>
-        <button>bottom</button>
-        <button>random</button>
-    </div>
-</body>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>Moving Game</title>
+    <link rel="stylesheet" href="styles/game.css" id="theme" />
+  </head>
+
+  <body onload="gameLoop();" onkeydown="" onkeyup="moveSelection(event)" >
+    <nav> <h1>Moving Game</h1></nav>
+  <div class="image-box">
+           
+  <img id="image1" src="/images/jerryUp.png" style="position: absolute; left: 15; right: 15; top: 15; bottom: auto; " width="200px" >
+  </div>
+
+  <footer class="footer">
+    <p> Made with 
+        <span class='love'>&#10084;&#65039;</span> by
+        <a href="https://www.linkedin.com/in/oyindamola-dawodu-989434b6/" class="dev" target="_blank" rel="noreferrer">
+              Dev-In-Transit
+            </a>
+    </p>  
+  </footer>
+
+  <script src="/out/app.js"></script>
+  </body>
 </html>
