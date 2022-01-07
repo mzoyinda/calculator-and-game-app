@@ -16,25 +16,26 @@ let element = document.getElementById("image1") as HTMLImageElement;
                 element.style.top = parseInt(element.style.top) + 40 + 'px';
             }
 
-            function moveSelection(evt: KeyboardEvent) {                    
-                switch (evt.keyCode) {
-                    case 37:
-                        leftArrowPressed();
-                    break;
+function moveSelection(e:KeyboardEvent) {
+    switch (e.key) {
+        case "ArrowLeft":
+            leftArrowPressed();
+        break;
 
-                    case 39:
-                        rightArrowPressed();
-                    break;
+        case "ArrowRight":
+            rightArrowPressed();
+        break;
 
-                    case 38:
-                        upArrowPressed();
-                    break;
+        case "ArrowUp":
+            upArrowPressed();
+        break;
 
-                    case 40:
-                        downArrowPressed();
-                    break;
-                }
-            };
+        case "ArrowDown":
+            downArrowPressed();
+        break;
+    }
+            }
+       
 
             window.onload = function() {
                 moveSelection();
